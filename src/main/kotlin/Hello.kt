@@ -1,4 +1,6 @@
 
         fun main(args: Array<String>) {
-            println("Hello, World")
+            // Will assign kotlin.Unit
+            val isUnit = println("This is an expression")
+            println(isUnit)
         }
