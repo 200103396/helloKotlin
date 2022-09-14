@@ -22,12 +22,18 @@ fun randomDay() : String {
 }
 
 fun main(args: Array<String>) {
-    feedTheFish()
+//    feedTheFish()
+    swim()   // uses default speed
+    swim("slow")   // positional argument
+    swim(speed="turtle-like")   // named parameter
 }
 
-fun feedTheFish() {
-    val day = randomDay()
-    val food = fishFood(day)
-
-    println ("Today is $day and the fish eat $food")
+//fun feedTheFish() {
+//    val day = randomDay()
+//    val food = fishFood(day)
+//
+//    println ("Today is $day and the fish eat $food")
+//}
+fun swim(speed: String = "fast") {
+    println("swimming $speed")
 }
